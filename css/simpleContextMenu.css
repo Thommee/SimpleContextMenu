@@ -1,0 +1,133 @@
+
+#simpleContextMenu { 
+    z-index: 9999999;
+    /*font-family: "Segoe UI", Tahoma, arial, sans-serif;*/
+
+    
+}
+
+
+#simpleContextMenu ul {
+    background-color:#ffffff;
+
+    background-image: linear-gradient(bottom, rgb(240,240,240) 0%, rgb(255,255,255) 64%);
+    background-image: -o-linear-gradient(bottom, rgb(240,240,240) 0%, rgb(255,255,255) 64%);
+    background-image: -moz-linear-gradient(bottom, rgb(240,240,240) 0%, rgb(255,255,255) 64%);
+    background-image: -webkit-linear-gradient(bottom, rgb(240,240,240) 0%, rgb(255,255,255) 64%);
+    background-image: -ms-linear-gradient(bottom, rgb(240,240,240) 0%, rgb(255,255,255) 64%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(240,240,240)),
+        color-stop(0.64, rgb(255,255,255))
+    );
+
+    display: block;
+    box-shadow: 2px 2px 3px #bbb;
+    border: 1px solid #999;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#simpleContextMenu ul li {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: context-menu;
+    position: relative;
+}
+#simpleContextMenu ul li a {
+    border: 1px solid transparent;
+    line-height: 20px;
+    padding: 0px 18px 0px 8px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    cursor: context-menu;
+    border-radius: 3px;
+    margin:1px 2px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    /*font-weight: normal !important;*/
+}
+#simpleContextMenu ul li a:hover {
+    border: 1px solid #aad6ff;
+    background-color: #eaf0ff;
+    
+    background-image: linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    background-image: -o-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    background-image: -moz-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    background-image: -webkit-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    background-image: -ms-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #E8F2FF),
+        color-stop(1, #FFFFFF),
+        color-stop(0, #FFFFFF)
+    );
+
+}
+
+#simpleContextMenu li.more > a span {
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #000;
+    width:0;
+    height:0;
+    position: absolute;
+    right:5px;
+    top:50%;
+    margin-top: -4px;
+
+}
+
+
+#simpleContextMenu ul li.more > a:hover{
+    border: 1px solid #aad6ff;
+    background-color: #eaf0ff;
+    
+    linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    -o-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    -moz-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    -webkit-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+    -ms-linear-gradient(bottom, #E8F2FF 0%, #FFFFFF 100%, #FFFFFF 0%);
+
+    -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #E8F2FF),
+        color-stop(1, #FFFFFF),
+        color-stop(0, #FFFFFF)
+    );
+}
+
+#simpleContextMenu li.separator {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #fff;
+}
+#simpleContextMenu li.header {
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    padding: 0px 8px;
+    color:#444;
+    font-style: italic;
+    background-color:#fff;  
+}
+#simpleContextMenu li > ul {
+    display: none;
+    position:absolute;
+}
+
+
+

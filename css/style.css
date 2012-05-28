@@ -1,0 +1,51 @@
+html {
+
+}
+
+body, p, form{
+ font-family:"Helvetica Neue",Helvetica, "Lucida Grande", "Lucida Sans Unicode","Century Gothic",Arial,sans-serif;
+}
+
+form {
+    margin: 100px auto 0px auto;
+    width: 400px;
+}
+
+#field1, #field2 
+{
+    width: 200px;
+    height: 24px;
+    padding: 2px 6px;
+    display: block;
+    margin: 5px;
+    box-shadow: inset  0px 0px 3px #dddddd;
+    border: 1px solid #cccccc;
+    background-color:#fbfbfb; 
+    border-radius: 3px;
+    color:#888;
+    -moz-transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+    -webkit-transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+    -o-transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+    -ms-transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+    transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
+#field1:hover, #field2:hover,
+#field1:focus, #field2:focus{
+    background-color:#ffffff;
+    border: 1px solid #999999;
+    color:#222222; 
+}
+
+#send, #cancel {
+    border: 0;
+    background-color:#224466;
+    color:#fff;
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin:  5px 0px 0px 5px; 
+    cursor: pointer;
+}
+#send:hover, #cancel:hover {
+    background-color: #2277bb;
+    -moz-transition: background-color 0.3s ease;
+}
