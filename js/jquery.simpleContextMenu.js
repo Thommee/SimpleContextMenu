@@ -69,13 +69,14 @@ $('html').simpleContextMenu({
   $.fn.simpleContextMenu = function (options) {
 
     var defaults = {
-        menu      : function(){ return [] },
-        container : 'simpleContextMenu',
+        menu          : function(){ return [] },
         showDelay     : 300,
         hideDelay     : 200,
-        minWidth      : 150
+        minWidth      : 150,
+        theme         : 'default'
     }
     options =  $.extend(defaults, options);
+    options.container = 'simpleContextMenu';
     var o = $(this);
     
     
@@ -116,7 +117,7 @@ $('html').simpleContextMenu({
     {
         e.preventDefault();
         $('#'+options.container).remove()
-        $('<div></div>').attr({id: options.container})
+        $('<div></div>').attr({id: options.container}).addClass(options.theme)
         .css({position: 'absolute', left: e.pageX, top: e.pageY})
         .appendTo('body')
         .html(prepareMenu(options.menu(o)))
