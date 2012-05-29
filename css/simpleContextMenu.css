@@ -1,3 +1,4 @@
+/*** CORE CSS ***/
 #simpleContextMenu { z-index: 9999999 }
 
 #simpleContextMenu ul {   
@@ -16,8 +17,6 @@
     border-top: 4px solid transparent; border-right: 4px solid transparent;
     border-bottom: 4px solid transparent; border-left: 4px solid #000;
 }
-
-#simpleContextMenu li.separator { border-top: 1px solid #e0e0e0; border-bottom: 1px solid #fff }
 
 #simpleContextMenu li > ul { display: none; position:absolute }
 
@@ -42,22 +41,14 @@
     background-image: -webkit-gradient( linear, left bottom, left top,
         color-stop(0, rgb(240,240,240)), color-stop(0.64, rgb(255,255,255)));
 
-    box-shadow: 2px 2px 3px #bbb;
-    border: 1px solid #999;
-    font-weight: bold;
+    box-shadow: 2px 2px 3px #bbb; border: 1px solid #999; font-weight: bold;
 }
 
 /* menu item */
 #simpleContextMenu.default li a {
-    border: 1px solid transparent;
-    line-height: 20px;
-    padding: 0px 18px 0px 8px;
-    color: #000;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    margin:1px 2px;
-
+    border: 1px solid transparent; line-height: 20px; padding: 0px 18px 0px 8px;
+    border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; 
+    color: #000;  margin:1px 2px;
 }
 
 /* menu item:hover */
@@ -77,18 +68,13 @@
 }
 
 /* separator */
-#simpleContextMenu.default li.separator { border-top: 1px solid #e0e0e0; border-bottom: 1px solid #fff }
+#simpleContextMenu.default li.separator { 
+    border-top: 1px solid #e0e0e0; border-bottom: 1px solid #fff }
 
 /* header */
 #simpleContextMenu.default li.header {
-    height: 28px;
-    line-height: 28px;
-    font-weight: bold;
-    padding: 0px 8px;
-    color:#444;
-    font-style: italic;
-    background-color:#fff;  
-}
+    height: 28px; line-height: 28px; font-weight: bold;  padding: 0px 8px;
+    color:#444; font-style: italic; background-color:#fff }
 
 /* arrow idicator */
 #simpleContextMenu.default li.more > a span {  border-left-color: #999 }
